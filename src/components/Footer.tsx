@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Twitter, Youtube, Mail } from 'lucide-react';
+import { Instagram, Facebook, Twitter, Mail, Linkedin } from 'lucide-react';
 
 
 const Footer = () => {
@@ -14,17 +14,17 @@ const Footer = () => {
               Elevate your fitness journey with premium performance apparel designed for those who push boundaries.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+              <a href="https://www.instagram.com/peak_ggym/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+              <a href="https://www.facebook.com/rahulpapnai0000" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+              <a href="https://x.com/Rahulchandr1" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Youtube size={20} />
+              <a href="https://www.linkedin.com/in/rahul-chandra-343294268/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                <Linkedin size={20} />
               </a>
             </div>
           </div>

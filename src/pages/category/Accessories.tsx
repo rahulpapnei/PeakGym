@@ -90,6 +90,6 @@ const products = [
   {
     name: "Gym Towel",
     price: 15,
-    image: "https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?auto=format&fit=crop&w=800",
+    image: "https://images.unsplash.com/photo-1638183130424-873c491cca1b?auto=format&fit=crop&w=800",
   },
 ];

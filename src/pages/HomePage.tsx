@@ -85,7 +85,7 @@ const HomePage = () => {
       id: 4,
       name: "Performance Shorts",
       price: 45,
-      image: "https://images.unsplash.com/photo-1562886877-aaaa5c0b3986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      image: "https://images.unsplash.com/photo-1617952385804-1da4f8d71ba9?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "men",
       isNew: false,
       colors: ["Black", "Navy", "Gray"]

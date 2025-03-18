@@ -34,7 +34,7 @@ const About = () => {
               </p>
             </div>
             <img
-              src="https://source.unsplash.com/600x400/?fitness"
+              src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="PEAKGYM fitness apparel"
               className="rounded-lg shadow-md w-full"
               loading="lazy"
@@ -42,7 +42,7 @@ const About = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-8 items-center mt-10">
             <img
-              src="https://source.unsplash.com/600x400/?gym"
+              src="https://images.unsplash.com/photo-1522898467493-49726bf28798?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Gym workout"
               className="rounded-lg shadow-md w-full"
               loading="lazy"
