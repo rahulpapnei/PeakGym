@@ -8,8 +8,12 @@ import ShopPage from './pages/ShopPage';
 import ProductPage from './pages/ProductPage';
 import AboutPage from './pages/About/AboutPage';
 import CartPage from './pages/CartPage';
-import Contact from './pages/Contact';
+import Contact from './pages/About/Contact';
 import Community from './pages/About/Community';
+import Accessories from './pages/category/Accessories';
+import NewReleases from './pages/category/NewReleases';
+import Men from './pages/category/Men';
+import Women from './pages/category/Women';
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/about/community" element={<Community />} />
+              <Route path="/new-releases" element={<NewReleases />} />
+              <Route path="/men" element={<Men/>} />
+              <Route path="/women" element={<Women/>} />
+              <Route path="/accessories" element={<Accessories/>} />
             </Routes>
           </main>
           <Footer />

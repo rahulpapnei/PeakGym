@@ -45,10 +45,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="/" className="text-2xl font-bold">
-              <span className="text-black">PEAK</span>
-              <span className="text-blue-600">GYM</span>
-            </Link>
+          
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
