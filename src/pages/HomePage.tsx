@@ -321,7 +321,7 @@ const HomePage = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">Follow Us On Instagram</h2>
-          <p className="text-center text-gray-600 mb-12">@peakgym</p>
+          <p className="text-center text-gray-600 mb-12">@peak_ggym</p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
               "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",

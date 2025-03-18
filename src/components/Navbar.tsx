@@ -37,9 +37,6 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link to="/new-releases" className="hover:text-gray-300">
-                New Releases
-              </Link>
               <Link to="/men" className="hover:text-gray-300">
                 Men
               </Link>
@@ -48,6 +45,9 @@ const Navbar = () => {
               </Link>
               <Link to="/accessories" className="hover:text-gray-300">
                 Accessories
+              </Link>
+              <Link to="/new-releases" className="hover:text-gray-300">
+                New Releases
               </Link>
             </div>
 
