@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Accessories() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-20">
       <div className="relative h-[50vh] mb-12">
         <img
           src="https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?auto=format&fit=crop&w=2000"

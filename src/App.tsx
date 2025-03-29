@@ -24,16 +24,16 @@ function App() {
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/help/contact" element={<Contact />} />
               <Route path="/shop" element={<ShopPage />} />
               <Route path="/product/:id" element={<ProductPage />} />
-              <Route path="/about" element={<AboutPage />} />
+              <Route path="/about/our-story" element={<AboutPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/about/community" element={<Community />} />
               <Route path="/new-releases" element={<NewReleases />} />
-              <Route path="/men" element={<Men/>} />
-              <Route path="/women" element={<Women/>} />
-              <Route path="/accessories" element={<Accessories/>} />
+              <Route path="/men-wear" element={<Men/>} />
+              <Route path="/women-wear" element={<Women/>} />
+              <Route path="/gym-accessories" element={<Accessories/>} />
             </Routes>
           </main>
           <Footer />

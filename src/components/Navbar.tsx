@@ -37,13 +37,13 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link to="/men" className="hover:text-gray-300">
+              <Link to="/men-wear" className="hover:text-gray-300">
                 Men
               </Link>
-              <Link to="/women" className="hover:text-gray-300">
+              <Link to="/women-wear" className="hover:text-gray-300">
                 Women
               </Link>
-              <Link to="/accessories" className="hover:text-gray-300">
+              <Link to="/gym-accessories" className="hover:text-gray-300">
                 Accessories
               </Link>
               <Link to="/new-releases" className="hover:text-gray-300">
