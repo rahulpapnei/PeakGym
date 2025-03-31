@@ -42,12 +42,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Help</h3>
             <ul className="space-y-2">
-              <li><Link to="/help/faq" className="text-gray-400 hover:text-white transition-colors">FAQs</Link></li>
-              <li><Link to="/help/shipping" className="text-gray-400 hover:text-white transition-colors">Shipping & Returns</Link></li>
-              <li><Link to="/help/size-guide" className="text-gray-400 hover:text-white transition-colors">Size Guide</Link></li>
               <li><Link to="/help/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/help/track-order" className="text-gray-400 hover:text-white transition-colors">Track Order</Link></li>
             </ul>
           </div>
           
@@ -55,9 +51,6 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">About</h3>
             <ul className="space-y-2">
               <li><Link to="/about/our-story" className="text-gray-400 hover:text-white transition-colors">Our Story</Link></li>
-              <li><Link to="/about/sustainability" className="text-gray-400 hover:text-white transition-colors">Sustainability</Link></li>
-              <li><Link to="/about/athletes" className="text-gray-400 hover:text-white transition-colors">Athletes</Link></li>
-              <li><Link to="/about/careers" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
               <li><Link to="/about/community" className="text-gray-400 hover:text-white transition-colors">Community</Link></li>
             </ul>
           </div>
