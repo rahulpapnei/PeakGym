@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /help/contact
+Disallow: /help/about
+Disallow: /about/our-story
+Disallow: /about/community
+
+Sitemap: https://peak-gym.vercel.app/sitemap.xml
