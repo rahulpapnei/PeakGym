@@ -4,4 +4,6 @@ Disallow: /help/about
 Disallow: /about/our-story
 Disallow: /about/community
 
+Allow: /
+
 Sitemap: https://peak-gym.vercel.app/sitemap.xml
