@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import { useCartStore } from '../store/cartStore';
 import { ShoppingCart } from 'lucide-react';
