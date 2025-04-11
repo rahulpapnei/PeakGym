@@ -9,3 +9,9 @@
     }
   ]
 }
+
+{
+  "routes": [
+    { "src": "/robots.txt", "dest": "/public/robots.txt" }
+  ]
+}

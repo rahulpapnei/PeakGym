@@ -1,83 +1,51 @@
-
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Twitter, Mail, Linkedin } from 'lucide-react';
-
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">PEAKGYM</h3>
-            <p className="text-gray-400 mb-4">
-              Elevate your fitness journey with premium performance apparel designed for those who push boundaries.
-            </p>
+            <h3 className="text-xl font-bold mb-4 text-white">PEAK GYM</h3>
+            <p className="text-gray-400">Elevate your fitness journey with premium equipment and expert guidance.</p>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li><Link to="/products" className="text-gray-400 hover:text-white">Products</Link></li>
+              <li><Link to="/classes" className="text-gray-400 hover:text-white">Classes</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>Address: Madhuwan chowk</li>
+              <li>Laxmi Nagar near metero piller no. 136</li>
+              <li>Phone: 7428630762</li>
+              <li>Email: rahul@peak-gym.vercel.app</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/peak_ggym/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Instagram size={20} />
+              <a href="https://www.facebook.com/rahulpapnai0000" className="text-gray-400 hover:text-white">
+                <Facebook className="h-6 w-6" />
               </a>
-              <a href="https://www.facebook.com/rahulpapnai0000" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Facebook size={20} />
+              <a href="https://www.instagram.com/peak_ggym/" className="text-gray-400 hover:text-white">
+                <Instagram className="h-6 w-6" />
               </a>
-              <a href="https://x.com/Rahulchandr1" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/rahul-chandra-343294268/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                <Linkedin size={20} />
+              <a href="https://x.com/Rahulchandr1" className="text-gray-400 hover:text-white">
+                <Twitter className="h-6 w-6" />
               </a>
             </div>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">Shop</h3>
-            <ul className="space-y-2">
-              <Link to="/men-wear" className="hover:text-gray-300">Men</Link>
-              <li><Link to="/women-wear" className="hover:text-gray-300">Women</Link></li>
-              <li><Link to="/gym-accessories" className="hover:text-gray-300">Accessories</Link></li>
-              <li><Link to="/new-releases" className="hover:text-gray-300">New Releases</Link></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">Help</h3>
-            <ul className="space-y-2">
-              <li><Link to="/help/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link to="/help/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">About</h3>
-            <ul className="space-y-2">
-              <li><Link to="/about/our-story" className="text-gray-400 hover:text-white transition-colors">Our Story</Link></li>
-              <li><Link to="/about/community" className="text-gray-400 hover:text-white transition-colors">Community</Link></li>
-            </ul>
           </div>
         </div>
-        
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <form className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
-                  className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none"
-                />
-                <button 
-                  type="submit" 
-                  className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition-colors flex items-center"
-                >
-                  <Mail size={16} className="mr-2" />
-                  Subscribe
-                </button>
-              </form>
-            </div>
-            <div className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} PEAKGYM. All rights reserved.
-            </div>
-          </div>
+        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Peak Gym. All rights reserved.</p>
         </div>
       </div>
     </footer>

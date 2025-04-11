@@ -35,6 +35,9 @@ const NotFound = () => {
         <div className="mt-12 space-y-2">
           <p className="text-gray-600">Looking for something specific?</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <Link to="/products" className="text-black hover:underline">Shop Equipment</Link>
+            <Link to="/classes" className="text-black hover:underline">Browse Classes</Link>
+            <Link to="/contact" className="text-black hover:underline">Contact Us</Link>
           </div>
         </div>
       </div>

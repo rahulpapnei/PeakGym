@@ -1,7 +1,14 @@
 import React from 'react';
 import { Award, Users, Clock, Target } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const handleBecomeMember = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-16">
@@ -34,22 +41,22 @@ const About = () => {
         <div className="text-center p-6 bg-white rounded-lg shadow">
           <Award className="h-12 w-12 mx-auto mb-4 text-black" />
           <h3 className="text-xl font-semibold mb-2">Expert Trainers</h3>
-          <p className="text-gray-600">Certified professionals to guide your fitness journey</p>
+          <p className="text-x-600">Certified professionals to guide your fitness journey</p>
         </div>
         <div className="text-center p-6 bg-white rounded-lg shadow">
           <Users className="h-12 w-12 mx-auto mb-4 text-black" />
           <h3 className="text-xl font-semibold mb-2">Strong Community</h3>
-          <p className="text-gray-600">A supportive environment for all fitness levels</p>
+          <p className="text-x-600">A supportive environment for all fitness levels</p>
         </div>
         <div className="text-center p-6 bg-white rounded-lg shadow">
           <Clock className="h-12 w-12 mx-auto mb-4 text-black" />
           <h3 className="text-xl font-semibold mb-2">24/7 Access</h3>
-          <p className="text-gray-600">Work out on your schedule</p>
+          <p className="text-x-600">Work out on your schedule</p>
         </div>
         <div className="text-center p-6 bg-white rounded-lg shadow">
           <Target className="h-12 w-12 mx-auto mb-4 text-black" />
           <h3 className="text-xl font-semibold mb-2">Goal-Focused</h3>
-          <p className="text-gray-600">Personalized programs for your success</p>
+          <p className="text-x-600">Personalized programs for your success</p>
         </div>
       </div>
 
@@ -58,7 +65,10 @@ const About = () => {
         <p className="text-xl mb-8">
           Start your fitness journey with us today and experience the Peak Gym difference.
         </p>
-        <button className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
+        <button
+          onClick={handleBecomeMember}
+          className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100"
+        >
           Become a Member
         </button>
       </div>
