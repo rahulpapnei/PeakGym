@@ -1,12 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <link rel="icon" type="image/svg+xml" href="/icon-transparent.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> Best Gym Wear for Comfort & Performance - PeakGym </title>
+    
+    <link rel="preload" href="/src/main.tsx" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+     <link rel="canonical" href="https://peak-gym.vercel.app/" /> 
+
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Find the best gym wear and accessories at PeakGym. Designed for comfort, style, and performance, our gear helps you look and feel great during every workout" />
+    <meta name="keywords" content="Gym, fitness coaching, personal training, strength training, workout programs, PeakGym" />
+    <meta name="google-site-verification" content="fp7Tj-KV9fYdngCqxy40SLq3Cve3yIhtMbQaqquMJXw" />  
+    
+    <meta property="og:title" content="Best Gym Wear for Comfort & Performance - PeakGym" />
+    <meta property="og:description" content="Find the best gym wear and accessories at PeakGym. Designed for comfort, style, and performance, our gear helps you look and feel great during every workout." />
+    <meta property="og:url" content="https://peak-gym.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://peak-gym.vercel.app/favicon.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Best Gym Wear for Comfort & Performance - PeakGym">
+    <meta name="twitter:site" content="@Rahulchandr1">
+    <meta name="twitter:description" content="Find the best gym wear and accessories at PeakGym. Designed for comfort, style, and performance, our gear helps you look and feel great during every workout">
+    <meta name="twitter:image" content="https://peak-gym.vercel.app/favicon.png">
+    <meta name="twitter:image:alt" content="Peakgym ">
+
+    <link rel="icon" href="https://peak-gym.vercel.app/favicon.png" type="image/png" sizes="192x192">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ExerciseGym",
+        "name": "PeakGym",
+        "url": "https://peak-gym.vercel.app/",
+        "logo": "https://peak-gym.vercel.app/favicon.png"
+      }
+      </script>
+
+    <!-- Breadcrumb JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/", 
+        "@type": "BreadcrumbList", 
+        "itemListElement": [{
+          "@type": "ListItem", 
+          "position": 1, 
+          "name": "Men",
+          "item": "https://peak-gym.vercel.app/men-wear"  
+        },{
+          "@type": "ListItem", 
+          "position": 2, 
+          "name": "Women",
+          "item": "https://peak-gym.vercel.app/women-wear"  
+        },{
+          "@type": "ListItem", 
+          "position": 3, 
+          "name": "About Us",
+          "item": "https://peak-gym.vercel.app/help/about"  
+        },{
+          "@type": "ListItem", 
+          "position": 4, 
+          "name": "Contact Us",
+          "item": "https://peak-gym.vercel.app/help/contact"  
+        }]
+      }
+      </script>
+      
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYM6EDC544"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-RYM6EDC544");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M3QX5TQM");
+    </script>
+    <!-- End Google Tag Manager -->
+
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3QX5TQM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
