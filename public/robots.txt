@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://peak-gym.vercel.app/sitemap.xml
