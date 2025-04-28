@@ -129,7 +129,7 @@ export function getMensProducts(): Product[] {
   },
   {
     id: 5,
-    name: "Men's Oversized Solid Loose fit Heavy Cotton T-Shirt (Pack of 2)",
+    name: "Men's Oversized Cotton T-Shirt (Pack of 2)",
     originalPrice: 1999.99,
     discount: 56,
     image: "https://m.media-amazon.com/images/I/51wBWiEz2qL._SX679_.jpg",
@@ -155,7 +155,7 @@ export function getMensProducts(): Product[] {
   },
   {
     id: 6,
-    name: "Tshirt for Men | Printed T Shirt for Men | 100% Cotton Regular Fit T-Shirt",
+    name: "Printed T Shirt for Men | 100% Cotton",
     originalPrice: 1499.99,
     discount: 71,
     image: "https://m.media-amazon.com/images/I/519cECQlGoL._SY741_.jpg",
@@ -234,7 +234,7 @@ export function getMensProducts(): Product[] {
   },
   {
     id: 9,
-    name: "Men T-Shirt || T-Shirt for Men || Solid T Shirt",
+    name: "T-Shirt for Men || Solid T Shirt",
     originalPrice: 1299,
     discount: 70,
     image: "https://m.media-amazon.com/images/I/71hKncxuEPL._SY741_.jpg",
@@ -259,7 +259,7 @@ export function getMensProducts(): Product[] {
   },
   {
     id: 10,
-    name: "Men's Super Combed Cotton Rich Solid Regular Fit Polo Neck Half Sleeve Casual T-Shirt | Pack of 2 |",
+    name: "Men's Regular Fit Polo Neck Casual T-Shirt | Pack of 2 |",
     originalPrice: 899,
     discount: 45,
     image: "https://m.media-amazon.com/images/I/61vX+fSrbAL._SX679_.jpg",
@@ -500,7 +500,7 @@ export function getMensProducts(): Product[] {
   },
   {
     id: 19,
-    name: "Men's Cotton Regular Fit Combo Plain Solid T-Shirt Pack of 2",
+    name: "Men's Cotton Regular Fit Plain Solid T-Shirt Pack of 2",
     originalPrice: 899.99,
     discount: 40,
     image: "https://m.media-amazon.com/images/I/51gYZG5xlrL._SX679_.jpg",
@@ -689,17 +689,20 @@ export function getMensProducts(): Product[] {
   },
   {
     id: 26,
-    name: "Casual Sunglasses",
+    name: "Men's Graphic Print Oversized Fit T-Shirt",
     originalPrice: 1299.99,
-    discount: 40,
-    image: "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=800",
+    discount: 59,
+    image: "https://m.media-amazon.com/images/I/51iLbTTRWOL._SX679_.jpg",
     images: [
-      "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=800"
+      "https://m.media-amazon.com/images/I/51iLbTTRWOL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61u7zHeX3tL._SY741_.jpg",
+      "https://m.media-amazon.com/images/I/51DtC+AGwpL._SY741_.jpg",
+      "https://m.media-amazon.com/images/I/6198datOH3L._SY741_.jpg",
+      "https://m.media-amazon.com/images/I/51Ui1OOA6NL._SY741_.jpg",
+      "https://m.media-amazon.com/images/I/61A6xewBmUL._SY741_.jpg"
     ],
-    description: "Stylish sunglasses for casual wear.",
-    details: "Premium sunglasses with UV protection. Perfect for sunny days.",
+    description: "Perfect for everyday comfort and streetwear looks.",
+    details: "Stand out in style with this men's graphic print oversized t-shirt. Soft, breathable fabric and bold design make it perfect for everyday comfort and streetwear looks.",
     features: [
       "Material: 60% Cotton, 40% Polyester",
       "Pattern: Solid",
@@ -841,7 +844,7 @@ return (
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 navbar-spacing">
     <div className="text-center mb-12">
       <h1 className="text-4xl font-bold mb-4 text-primary">Best For Men</h1>
-      <p className="text-xl text-secondary">Premium equipment designed for maximum performance</p>
+      <p className="text-xl text-secondary">Clothes that feel good, look right, and fit your story.</p>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

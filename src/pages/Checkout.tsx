@@ -65,6 +65,7 @@ const Checkout: React.FC = () => {
     state: '',
     zipCode: '',
   });
+  const [isAddressValid, setIsAddressValid] = useState(false); // Address validation flag
 
   const total = items.reduce((to, item) => 
     to + ((item.originalPrice - (item.originalPrice * item.discount / 100)) * item.quantity)
@@ -82,11 +83,9 @@ const Checkout: React.FC = () => {
 
     // 1) load PayPal's JS SDK
     const script = document.createElement('script');
-    // replace YOUR_CLIENT_ID with your real PayPal client ID (or pull from env)
     script.src = `https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD`;
     script.async = true;
     script.onload = () => {
-      // 2) render the buttons into our container
       const paypal = (window as WindowWithPayPal).paypal;
       
       if (paypal && paypalRef.current) {
@@ -117,14 +116,20 @@ const Checkout: React.FC = () => {
     };
     document.body.appendChild(script);
 
-    // cleanup if component unmounts
     return () => {
       document.body.removeChild(script);
     };
   }, [finalTotal, items, dispatch, navigate]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+
+    // Check if address is filled
+    if (name === 'address') {
+      setIsAddressValid(value.trim().length > 0); // Only enable the button if address is not empty
+    }
+  };
 
   const handleCashOnDelivery = () => {
     const trackingCode = generateTrackingCode();
@@ -223,11 +228,7 @@ const Checkout: React.FC = () => {
                 </div>
               ))}
               <hr className="my-2"/>
-              {[
-                ['Subtotal', total],
-                ['Shipping', shipping],
-                ['Tax', tax]
-              ].map(([label, amt]: [string, number]) => (
+              {[['Subtotal', total], ['Shipping', shipping], ['Tax', tax]].map(([label, amt]: [string, number]) => (
                 <div key={label} className="flex justify-between text-gray-600">
                   <span>{label}</span>
                   <span>₹{amt.toFixed(2)}</span>
@@ -256,6 +257,7 @@ const Checkout: React.FC = () => {
           <button
             onClick={handleCashOnDelivery}
             className="mt-4 w-full bg-black text-white py-3 rounded hover:bg-gray-800 flex items-center justify-center gap-2"
+            disabled={!isAddressValid}  // Disable button if address is not valid
           >
             <Package className="h-5 w-5" /> Pay with Cash on Delivery
           </button>

@@ -36,51 +36,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Collections */}
-      <section className="py-20 px-4 navbar-spacing">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center font-heading text-primary">COLLECTIONS</h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {[
-              {
-                name: 'Casual Blue',
-                description: 'Light blue graphic tee',
-                image: 'https://m.media-amazon.com/images/I/51d1ou5cw0L._SX679_.jpg'
-              },
-              {
-                name: 'Classic Black',
-                description: 'Black polo with logo',
-                image: 'https://m.media-amazon.com/images/I/612Rl6GKHoL._SX679_.jpg'
-              },
-              {
-                name: 'Forest Green',
-                description: 'Green ampersand design',
-                image: 'https://m.media-amazon.com/images/I/51GL3VKJLaL._SX679_.jpg'
-              }
-            ].map((item) => (
-              <div
-                key={item.name}
-                className="group relative overflow-hidden rounded-lg cursor-pointer bg-gray-100"
-                onClick={() => navigate(`/mens?collection=${item.name.toLowerCase()}`)}
-              >
-                <div className="relative w-full aspect-square">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <h3 className="text-xl font-bold text-white mb-1">{item.name}</h3>
-                  <p className="text-white/80 text-sm">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Best Sellers */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -133,31 +88,31 @@ const Home = () => {
       </section>
 
       {/* Lookbook Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-white text-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center font-heading">LOOKBOOK</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="group relative overflow-hidden rounded-lg">
               <img
-                src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800"
+                src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000014774123-Red-RED-1000014774123_01-2100.jpg"
                 alt="Spring Collection Lookbook"
                 className="h-[500px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
               <div className="absolute bottom-8 left-8">
-                <h3 className="text-2xl font-bold mb-2">URBAN STYLE</h3>
+                <h3 className="text-2xl text-white font-bold mb-2">URBAN STYLE</h3>
                 <p className="text-white/80">Street-inspired looks for the modern man</p>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-lg">
               <img
-                src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800"
+                src="https://media-uk.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000012657281-Purple-PURPLE-1000012657281_01-2100.jpg"
                 alt="Summer Collection Lookbook"
                 className="h-[500px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
               <div className="absolute bottom-8 left-8">
-                <h3 className="text-2xl font-bold mb-2">MINIMALIST</h3>
+                <h3 className="text-2xl text-white font-bold mb-2">MINIMALIST</h3>
                 <p className="text-white/80">Clean, simple, and sophisticated</p>
               </div>
             </div>

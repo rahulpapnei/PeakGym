@@ -16,7 +16,7 @@ const Cart = () => {
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold mb-8">Shopping Cart</h1>
+      <h1 className="text-4xl m-10 font-bold mb-8">Shopping Cart</h1>
       
       {items.length === 0 ? (
         <div className="text-center py-12">
@@ -26,7 +26,7 @@ const Cart = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             {items.map((item) => (
-              <div key={`${item.id}-${item.size}-${item.color}`} className="flex items-center gap-4 bg-white p-4 rounded-lg mb-4 shadow">
+              <div key={`${item.id}-${item.size}`} className="flex items-center gap-4 bg-white p-4 rounded-lg mb-4 shadow">
                 <div className="flex-grow">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-gray-600">
@@ -36,7 +36,7 @@ const Cart = () => {
                     )}
                   </p>
                   <p className="text-sm text-gray-500">
-                    Size: {item.size}, Color: {item.color}
+                    Size: {item.size}
                   </p>
                 </div>
                 
@@ -70,7 +70,7 @@ const Cart = () => {
             <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
             <div className="space-y-2 mb-4">
               {items.map((item) => (
-               <div key={`${item.id}-${item.size}-${item.color}`} className="flex justify-between text-gray-600">
+               <div key={`${item.id}-${item.size}`} className="flex justify-between text-gray-600">
                <span>{item.name} (x{item.quantity})</span>
                <span>₹{((item.originalPrice - (item.originalPrice * item.discount / 100)) * item.quantity).toFixed(2)}</span>
              </div>

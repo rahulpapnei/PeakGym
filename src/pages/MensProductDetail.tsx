@@ -176,27 +176,6 @@ const MensProductDetail = () => {
             </div>
           </div>
 
-          {/* Color Selection - Added to fix the unused setSelectedColor */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Select Color</h3>
-            <div className="flex gap-4">
-              {availableColors.map((color) => (
-                <button
-                  key={color}
-                  onClick={() => setSelectedColor(color)}
-                  className={`w-12 h-12 rounded-full border-2 ${
-                    selectedColor === color
-                      ? 'border-black'
-                      : 'border-gray-300 hover:border-black'
-                  }`}
-                  style={{ backgroundColor: color }}
-                  aria-label={color}
-                />
-              ))}
-            </div>
-            <p className="text-sm text-gray-500">Selected color: {selectedColor}</p>
-          </div>
-
           {/* Quantity Selection */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Quantity</h3>
