@@ -1,61 +1,86 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Menu, X } from 'lucide-react';
-import { useCartStore } from '../store/cartStore';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/store';
+import { ShoppingCart, Package, Search } from 'lucide-react';
+import { CartItem } from '../store/cartSlice';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const cartItems = useCartStore((state) => state.items);
+const Navbar: React.FC = () => {
+  const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const cartItemCount = cartItems.reduce((sum: number, item: CartItem) => sum + item.quantity, 0);
+
+  const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery('');
+    }
+  };
 
   return (
-    <nav className="bg-black text-white">
+    <nav className={`fixed w-full z-50 ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-white">PEAK GYM</Link>
-          </div>
+          <Link to="/" className="text-2xl font-bold text-black hover:text-gray-700">
+            TrenD
+          </Link>
           
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <Link to="/" className="hover:text-gray-300 px-3 py-2">Home</Link>
-              <Link to="/products" className="hover:text-gray-300 px-3 py-2">Products</Link>
-              <Link to="/mens" className="hover:text-gray-300 px-3 py-2">Men</Link>
-              <Link to="/classes" className="hover:text-gray-300 px-3 py-2">Classes</Link>
-              <Link to="/about" className="hover:text-gray-300 px-3 py-2">About</Link>
-              <Link to="/contact" className="hover:text-gray-300 px-3 py-2">Contact</Link>
-            </div>
+          <div className="flex items-center space-x-8">
+            <Link to="/mens" className="text-gray-700 hover:text-black font-bold">
+              Men
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-black font-bold">
+              About
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-black font-bold">
+              Contact
+            </Link>
           </div>
 
-          <div className="flex items-center">
-            <Link to="/cart" className="relative p-2">
+          <div className="flex items-center space-x-6">
+            <form onSubmit={handleSearch} className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search products..."
+                className="w-64 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+              />
+              <button
+                type="submit"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-black"
+              >
+                <Search className="h-5 w-5" />
+              </button>
+            </form>
+            <Link to="/order-tracking" className="flex items-center text-gray-700 hover:text-black">
+              <Package className="h-5 w-5 mr-1" />
+              Track Order
+            </Link>
+            <Link
+              to="/cart"
+              className="relative p-2 text-gray-700 hover:text-black"
+            >
               <ShoppingCart className="h-6 w-6" />
-              {cartItems.length > 0 && (
-                <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full h-5 w-5 flex items-center justify-center text-xs">
-                  {cartItems.length}
+              {cartItemCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                  {cartItemCount}
                 </span>
               )}
             </Link>
-            <div className="md:hidden ml-2">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
-            </div>
+            <Link
+              to="/account"
+              className="p-2 text-gray-700 hover:text-black"
+            >
+            </Link>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link to="/" className="block hover:text-gray-300 px-3 py-2">Home</Link>
-              <Link to="/products" className="block hover:text-gray-300 px-3 py-2">Products</Link>
-              <Link to="/mens" className="block hover:text-gray-300 px-3 py-2">Men</Link>
-              <Link to="/classes" className="block hover:text-gray-300 px-3 py-2">Classes</Link>
-              <Link to="/about" className="block hover:text-gray-300 px-3 py-2">About</Link>
-              <Link to="/contact" className="block hover:text-gray-300 px-3 py-2">Contact</Link>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );
