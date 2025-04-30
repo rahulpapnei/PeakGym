@@ -18,7 +18,7 @@ const OrderTracking = () => {
     setTrackingStatus({
       status: 'processing',
       date: new Date().toISOString().split('T')[0],
-      location: 'New York Distribution Center',
+      location: 'Mandawali west vinod nagar',
       trackingCode: orderId
     });
   };
@@ -95,7 +95,7 @@ const OrderTracking = () => {
                 <span className="font-semibold">{trackingStatus.date}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-600">Location</span>
+                <span className="text-gray-600">Packaging Location</span>
                 <span className="font-semibold">{trackingStatus.location}</span>
               </div>
             </div>
