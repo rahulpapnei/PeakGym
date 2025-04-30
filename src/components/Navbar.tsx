@@ -28,11 +28,7 @@ const Navbar: React.FC = () => {
           
           {/* Logo + Brand */}
           <Link to="/" className="flex items-center">
-            <img
-              src="public/favicon.png"
-              alt="Logo"
-              className="h-12 w-12 object-contain"
-            />
+
             <span className="text-2xl font-bold text-black hover:text-gray-700">
               Aristo
             </span>
