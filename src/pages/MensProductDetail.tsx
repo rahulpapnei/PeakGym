@@ -14,14 +14,11 @@ const MensProductDetail = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedTab, setSelectedTab] = useState('description');
   const [selectedSize, setSelectedSize] = useState('');
-  const [selectedColor, setSelectedColor] = useState('black');
+  const [selectedColor, ] = useState('black');
   const [quantity, setQuantity] = useState(1);
   const [isWishlist, setIsWishlist] = useState(false);
   const [showAllReviews, setShowAllReviews] = useState(false);
   const product = getMensProducts().find((p) => p.id === Number(id));
-
-  // Available colors for the product
-  const availableColors = ['black', 'blue', 'gray', 'green', 'red'];
 
   if (!product) {
     return <div>Product not found</div>;

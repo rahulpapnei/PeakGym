@@ -37,14 +37,14 @@ export function getMensProducts(): Product[] {
     description: "Stay cool and comfy oversized fit T-shirt.",
     details: "Stay cool and comfy oversized fit T-shirt — a perfect blend of effortless style, softness, and everyday comfort.",
     features: [
-      "100% Cotton",
+      "Material: 100% Cotton",
       "Pattern: Printed",
       "Neck: Crew Neck",
       "Fit: Oversized",
       "Occasion: Casual",
-      "Short Sleeve",
-      "Collarless",
-      "Standard Length"
+      "Sleeve type: Short Sleeve",
+      "Collar style: Collarless",
+      "Length: Standard Length"
     ],
     rating: 3.9,
   },

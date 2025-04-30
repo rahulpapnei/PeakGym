@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, X, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, X } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +44,7 @@ const Contact = () => {
             </button>
             <h3 className="text-2xl font-bold mb-4">Thank You!</h3>
             <p className="text-gray-600">
-              We've received your message and will get back to you shortly. Thank you for choosing TrenD!
+              We've received your message and will get back to you shortly. Thank you for choosing Aristo!
             </p>
           </div>
         </div>
@@ -64,8 +64,8 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-semibold mb-2 text-primary">Location</h3>
               <p className="text-secondary">
-                123 Fitness Street<br />
-                Gym City, GC 12345
+                Mandawali west vinod nagar<br />
+                Near talab chowk
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-semibold mb-2 text-primary">Phone</h3>
               <p className="text-secondary">
-                +1 (555) 123-4567<br />
+                +91 7428630762<br />
                 Available 24/7
               </p>
             </div>
@@ -86,20 +86,14 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-semibold mb-2 text-primary">Email</h3>
               <p className="text-secondary">
-                info@peakgym.com<br />
-                support@peakgym.com
+                info@Aristo.com<br />
+                support@Aristo.com
               </p>
             </div>
           </div>
 
           <div className="flex items-start space-x-4">
-            <Clock className="h-6 w-6 text-primary mt-1" />
             <div>
-              <h3 className="text-xl font-semibold mb-2 text-primary">Hours</h3>
-              <p className="text-secondary">
-                Monday - Friday: 5:00 AM - 11:00 PM<br />
-                Saturday - Sunday: 6:00 AM - 10:00 PM
-              </p>
             </div>
           </div>
         </div>

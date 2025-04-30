@@ -2,13 +2,13 @@
 const PrivacyPolicy = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+      <h1 className="text-4xl font-bold m-10 mb-8">Privacy Policy</h1>
       
       <div className="prose prose-lg">
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p className="text-gray-600 mb-4">
-            At Peak Gym, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make purchases through our platform.
+          Aristo is all about everyday comfort and clean, simple style. Our t-shirts are soft, well-fitted, and made to last. No trends, no fuss—just reliable, good-looking t-shirts you’ll reach for again and again.
           </p>
         </section>
 
@@ -84,10 +84,10 @@ const PrivacyPolicy = () => {
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
           <div className="text-gray-600">
-            <p>Peak Gym</p>
+            <p>Aristo</p>
             <p>123 Fitness Street</p>
             <p>New York, NY 10001</p>
-            <p>Email: privacy@peakgym.com</p>
+            <p>Email: Official@Aristo.com</p>
             <p>Phone: (555) 123-4567</p>
           </div>
         </section>
